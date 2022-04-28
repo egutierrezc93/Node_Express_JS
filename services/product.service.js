@@ -10,7 +10,7 @@ class ProductsService {
     this.generate();
   }
 
-  async generate() {
+  generate() {
     const limit = 100;
     for (let index = 0; index < limit; index++) {
       this.products.push({

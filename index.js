@@ -25,6 +25,10 @@ app.get('/', (req, res) =>{
   res.send('Hola mi server en express');
 });
 
+app.get('/nueva-ruta', (req, res) => {
+  res.send('Hola, soy una nueva ruta');
+});
+
 routerApi(app);
 
 app.use(logErrors);
